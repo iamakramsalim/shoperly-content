@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+  .bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) contrast(1.2) saturate(1.1);
+  }
+
+  /* Yellow diagonal slash accent */
+  .slash {
+    position: absolute;
+    top: -100px;
+    right: -50px;
+    width: 300px;
+    height: 1600px;
+    background: #FFDD04;
+    transform: rotate(12deg);
+    opacity: 0.12;
+  }
+
+  .content {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+  }
+
+  /* Logo in yellow badge */
+  .logo-badge {
+    background: #FFDD04;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 28px;
+    border-radius: 12px;
+    width: fit-content;
+  }
+  .logo-badge span {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1a1a1a;
+    letter-spacing: -1px;
+  }
+
+  .headline-area {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .headline {
+    font-size: 120px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 0.95;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  }
+  .headline .accent {
+    color: #FFDD04;
+    display: block;
+    font-size: 140px;
+    letter-spacing: -6px;
+  }
+
+  .subtitle {
+    font-size: 28px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.85);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 600px;
+    line-height: 1.4;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  }
+
+  /* Yellow line accent */
+  .yellow-line {
+    width: 80px;
+    height: 6px;
+    background: #FFDD04;
+    margin-bottom: 20px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+  <img class="bg" src="bg-photo.png" />
+  <div class="slash"></div>
+  <div class="content">
+    <div class="logo-badge"><span>shoperly</span></div>
+    <div class="headline-area">
+      <div class="yellow-line"></div>
+      <div class="headline">
+        TU NEGOCIO<br>
+        MERECE<br>
+        <span class="accent">MÁS</span>
+      </div>
+    </div>
+    <div class="subtitle">Creá tu tienda online gratis en minutos</div>
+  </div>
+</body>
+</html>

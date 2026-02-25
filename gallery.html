@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shoperly Content Calendar</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; background: #0a0a0a; color: #fff; padding: 40px; }
+  h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .subtitle { color: rgba(255,255,255,0.5); margin-bottom: 40px; font-size: 14px; }
+  .date-group { margin-bottom: 48px; }
+  .date-label { font-size: 18px; font-weight: 700; color: #FFDD04; margin-bottom: 6px; }
+  .topic { font-size: 14px; color: rgba(255,255,255,0.6); margin-bottom: 16px; }
+  .slides { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 12px; }
+  .slides img { height: 320px; border-radius: 12px; flex-shrink: 0; cursor: pointer; transition: transform 0.15s; }
+  .slides img:hover { transform: scale(1.03); }
+  .caption-box { background: rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px; margin-top: 12px; max-width: 600px; }
+  .caption-label { font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .caption { font-size: 13px; color: rgba(255,255,255,0.7); white-space: pre-wrap; line-height: 1.5; }
+  .status { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-left: 12px; }
+  .status-ready { background: rgba(34,197,94,0.15); color: #22c55e; }
+  .status-posted { background: rgba(59,130,246,0.15); color: #3b82f6; }
+  .status-draft { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.4); }
+  /* Lightbox */
+  .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 100; justify-content: center; align-items: center; cursor: zoom-out; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 16px; }
+</style>
+</head>
+<body>
+  <h1>📅 Shoperly Content Calendar</h1>
+  <p class="subtitle">Click any slide to preview full size</p>
+  <div id="content"></div>
+  <div class="lightbox" id="lightbox" onclick="this.classList.remove('open')">
+    <img id="lb-img" src="">
+  </div>
+<script>
+// This reads from a manifest we generate
+const MANIFEST = %%MANIFEST%%;
+const container = document.getElementById('content');
+MANIFEST.forEach(item => {
+  const group = document.createElement('div');
+  group.className = 'date-group';
+  const statusClass = 'status-' + (item.status || 'draft');
+  group.innerHTML = `
+    <div class="date-label">${item.date} <span class="status ${statusClass}">${item.status || 'draft'}</span></div>
+    <div class="topic">${item.topic} · ${item.slides} slides · ${(item.platform||[]).join(', ')}</div>
+    <div class="slides">
+      ${Array.from({length: item.slides}, (_, i) => 
+        `<img src="published/${item.date}/slide-${i+1}.png" onclick="event.stopPropagation(); document.getElementById('lb-img').src=this.src; document.getElementById('lightbox').classList.add('open');">`
+      ).join('')}
+    </div>
+    <div class="caption-box">
+      <div class="caption-label">Caption</div>
+      <div class="caption">${item.caption}</div>
+    </div>
+  `;
+  container.appendChild(group);
+});
+</script>
+</body>
+</html>

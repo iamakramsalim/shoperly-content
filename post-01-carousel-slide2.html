@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #1a1a1a;
+    font-family: -apple-system, 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFDD04;
+    letter-spacing: -0.5px;
+  }
+  .slide-num {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+  }
+  .error-num {
+    font-size: 120px;
+    font-weight: 900;
+    color: #FFDD04;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    max-width: 800px;
+  }
+  .description {
+    font-size: 28px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+    max-width: 750px;
+  }
+  .fix {
+    margin-top: 40px;
+    padding: 24px 36px;
+    background: #FFDD04;
+    border-radius: 16px;
+    display: inline-block;
+  }
+  .fix-label {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .fix-text {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.4;
+  }
+  .swipe {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+</style>
+</head>
+<body>
+  <div class="logo">shoperly</div>
+  <div class="slide-num">2/5</div>
+  <div class="error-num">01</div>
+  <h2>No tener fotos de tus productos</h2>
+  <p class="description">El 90% de los compradores deciden por la foto. Sin imagen = sin venta.</p>
+  <div class="fix">
+    <div class="fix-label">Solución</div>
+    <div class="fix-text">Usá tu celular + luz natural. No necesitás una cámara profesional.</div>
+  </div>
+  <div class="swipe">→</div>
+</body>
+</html>

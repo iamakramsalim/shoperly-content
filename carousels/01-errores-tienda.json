@@ -1,0 +1,77 @@
+{
+  "id": "01-errores-tienda",
+  "topic": "5 errores que matan tu tienda online",
+  "caption": "¿Tenés una tienda online pero no vendés? 😬\n\nEstos 5 errores son los más comunes entre emprendedores paraguayos. Guardá este post y empezá a corregirlos hoy 👇\n\n#emprendedoresparaguayos #tiendaonline #ecommerce #shoperly #ventasonline #emprendedorespy #negocioonline #paraguay #emprendimiento",
+  "slides": [
+    {
+      "type": "hook",
+      "theme": "dark",
+      "emoji": "💀",
+      "headline": "5 ERRORES<br>QUE MATAN<br>TU TIENDA<br><span class='accent'>ONLINE</span>",
+      "subtitle": "Y cómo solucionarlos en minutos",
+      "headlineSize": "105px"
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "01",
+      "emoji": "📸",
+      "watermarkEmoji": "📸",
+      "title": "NO TENER FOTOS DE TUS PRODUCTOS",
+      "body": "El 90% de los compradores deciden por la foto. Sin imagen, no hay venta.",
+      "tipLabel": "✅ Solución",
+      "tip": "Usá tu celular con luz natural. No necesitás cámara profesional."
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "02",
+      "emoji": "🤫",
+      "watermarkEmoji": "💸",
+      "title": "\"PRECIO POR INBOX\"",
+      "body": "Esconder el precio espanta clientes. La gente quiere saber cuánto cuesta ANTES de escribirte.",
+      "tipLabel": "✅ Solución",
+      "tip": "Poné el precio en cada producto. Transparencia genera confianza."
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "03",
+      "emoji": "📱",
+      "watermarkEmoji": "📱",
+      "title": "VENDER SOLO POR INSTAGRAM",
+      "body": "Instagram no tiene carrito, no organiza productos, y si te hackean perdés todo.",
+      "tipLabel": "✅ Solución",
+      "tip": "Usá Instagram para atraer. Tu tienda propia para cerrar la venta."
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "04",
+      "emoji": "💬",
+      "watermarkEmoji": "💬",
+      "title": "SIN WHATSAPP VISIBLE",
+      "body": "En Paraguay se compra por WhatsApp. Si tu número no está visible, perdés la venta.",
+      "tipLabel": "✅ Solución",
+      "tip": "Poné tu WhatsApp en un lugar visible de tu tienda."
+    },
+    {
+      "type": "content",
+      "theme": "yellow",
+      "stepNum": "05",
+      "emoji": "📝",
+      "watermarkEmoji": "📝",
+      "title": "DESCRIPCIONES VACÍAS",
+      "body": "\"Remera linda\" no vende. Tu cliente necesita talle, material, color y por qué debería comprarte a vos.",
+      "tipLabel": "✅ Solución",
+      "tip": "Escribí descripciones claras: qué es, de qué material, talles disponibles."
+    },
+    {
+      "type": "cta",
+      "emoji": "🛍️",
+      "headline": "CREÁ TU TIENDA GRATIS EN 5 MINUTOS",
+      "subtitle": "Sin código. Sin complicaciones. Solo vos y tus productos.",
+      "saveText": "Guardá este post 🔖"
+    }
+  ]
+}

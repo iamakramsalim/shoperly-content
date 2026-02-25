@@ -1,0 +1,56 @@
+{
+  "id": "03-whatsapp-ventas",
+  "topic": "Cómo vender más por WhatsApp",
+  "caption": "WhatsApp es tu mejor vendedor 💬\n\nPero solo si lo usás bien. Acá van 4 tips para vender más sin ser spam 👇\n\n#emprendedoresparaguayos #whatsapp #ventasonline #tiendaonline #shoperly #ecommerce #paraguay #emprendimiento #negocioonline",
+  "slides": [
+    {
+      "type": "hook",
+      "theme": "dark",
+      "headline": "VENDÉ MÁS<br>POR<br><span class='accent'>WHATSAPP</span>",
+      "subtitle": "4 tips que realmente funcionan en Paraguay 🇵🇾",
+      "headlineSize": "115px"
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "01",
+      "title": "RESPONDÉ RÁPIDO",
+      "body": "Si tardás más de 10 minutos, el cliente ya le escribió a tu competencia.",
+      "tipLabel": "Dato",
+      "tip": "Los negocios que responden en menos de 5 min venden 3x más."
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "02",
+      "title": "MANDÁ FOTOS REALES",
+      "body": "No uses fotos genéricas de internet. Tu cliente quiere ver el producto REAL.",
+      "tipLabel": "Tip",
+      "tip": "Sacá fotos con buena luz y fondo limpio. Simple pero efectivo."
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "03",
+      "title": "TENÉ TU CATÁLOGO LISTO",
+      "body": "No obligues al cliente a preguntar por cada producto. Tené un link a tu tienda listo para enviar.",
+      "tipLabel": "Pro tip",
+      "tip": "Poné el link de tu tienda Shoperly en tu bio y en tu estado de WhatsApp."
+    },
+    {
+      "type": "content",
+      "theme": "yellow",
+      "stepNum": "04",
+      "title": "NO SEAS SPAM",
+      "body": "No mandes mensajes masivos sin permiso. Mejor: posteá tu link en tu estado 2-3 veces por semana.",
+      "tipLabel": "La regla",
+      "tip": "Que te escriban a vos. No al revés."
+    },
+    {
+      "type": "cta",
+      "headline": "TU TIENDA + WHATSAPP = MÁS VENTAS",
+      "subtitle": "Creá tu tienda gratis y empezá a recibir pedidos hoy.",
+      "saveText": "Guardá para aplicarlo 🔖"
+    }
+  ]
+}

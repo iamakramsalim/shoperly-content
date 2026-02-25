@@ -1,0 +1,56 @@
+{
+  "id": "02-instagram-vs-tienda",
+  "topic": "Instagram vs Tienda propia",
+  "caption": "Vendés por Instagram? 📱\n\nEstá bien para empezar, pero si querés crecer en serio necesitás tu propia tienda. Te explico por qué 👇\n\nCreá la tuya gratis en shoperly.app\n\n#emprendedoresparaguayos #tiendaonline #instagram #ecommerce #shoperly #emprendimiento #ventasonline #paraguay",
+  "slides": [
+    {
+      "type": "hook",
+      "theme": "dark",
+      "headline": "INSTAGRAM<br><span class='accent'>VS</span><br>TIENDA<br>PROPIA",
+      "subtitle": "¿Por qué necesitás las dos? 🤔",
+      "headlineSize": "120px"
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "01",
+      "title": "INSTAGRAM NO ES TUYO",
+      "body": "Te pueden hackear, banear o cerrar la cuenta. Y perdés TODO de un día para otro.",
+      "tipLabel": "Realidad",
+      "tip": "Tu tienda propia es tuya. Nadie te la puede quitar."
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "02",
+      "title": "NO TIENE CARRITO",
+      "body": "Tus clientes tienen que escribirte por cada producto. Eso es fricción. Fricción = menos ventas.",
+      "tipLabel": "Con tu tienda",
+      "tip": "El cliente elige, agrega al carrito y te manda el pedido completo por WhatsApp."
+    },
+    {
+      "type": "content",
+      "theme": "dark",
+      "stepNum": "03",
+      "title": "NO APARECÉS EN GOOGLE",
+      "body": "Nadie busca tu negocio en Instagram. Lo buscan en Google. Y tu perfil de IG no aparece.",
+      "tipLabel": "Con tu tienda",
+      "tip": "Tu tienda aparece en Google cuando buscan lo que vendés."
+    },
+    {
+      "type": "content",
+      "theme": "yellow",
+      "stepNum": "04",
+      "title": "USÁ LAS DOS",
+      "body": "Instagram para atraer gente. Tu tienda para vender. Es la combinación perfecta.",
+      "tipLabel": "La fórmula",
+      "tip": "Instagram → lleva tráfico → tu tienda → cierra la venta por WhatsApp."
+    },
+    {
+      "type": "cta",
+      "headline": "TU NEGOCIO MERECE SU PROPIA TIENDA",
+      "subtitle": "Creá la tuya gratis. En 5 minutos. Sin saber programar.",
+      "saveText": "Guardá esto para después 🔖"
+    }
+  ]
+}

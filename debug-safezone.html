@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1920px; position: relative; background: #333; }
+  .canvas { width: 100%; height: 100%; position: relative; }
+  /* Dead zones - red overlay */
+  .dead-top { position: absolute; top: 0; left: 0; right: 0; height: 130px; background: rgba(255,0,0,0.3); z-index: 10; }
+  .dead-bottom { position: absolute; bottom: 0; left: 0; right: 0; height: 350px; background: rgba(255,0,0,0.3); z-index: 10; }
+  .dead-right { position: absolute; top: 0; right: 0; bottom: 0; width: 120px; background: rgba(255,0,0,0.2); z-index: 10; }
+  .dead-left { position: absolute; top: 0; left: 0; bottom: 0; width: 60px; background: rgba(255,0,0,0.2); z-index: 10; }
+  /* Our padding area - blue outline */
+  .our-padding {
+    position: absolute;
+    top: 150px; left: 80px; right: 150px; bottom: 400px;
+    border: 4px dashed rgba(0,150,255,0.8);
+    z-index: 20;
+  }
+  /* Labels */
+  .label {
+    position: absolute; z-index: 30;
+    color: white; font-family: sans-serif; font-size: 20px; font-weight: bold;
+    background: rgba(0,0,0,0.7); padding: 6px 12px; border-radius: 4px;
+  }
+  .l-top { top: 135px; left: 50%; transform: translateX(-50%); }
+  .l-bottom { bottom: 355px; left: 50%; transform: translateX(-50%); }
+  .l-right { top: 50%; right: 125px; transform: translateY(-50%); }
+  .l-left { top: 50%; left: 65px; transform: translateY(-50%); }
+  .l-safe { top: 160px; left: 90px; color: #4af; }
+  .l-dead-top { top: 50px; left: 50%; transform: translateX(-50%); color: #f66; }
+  .l-dead-bottom { bottom: 150px; left: 50%; transform: translateX(-50%); color: #f66; }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="dead-top"></div>
+    <div class="dead-bottom"></div>
+    <div class="dead-right"></div>
+    <div class="dead-left"></div>
+    <div class="our-padding"></div>
+    <div class="label l-dead-top">⛔ TOP DEAD ZONE: 130px (nav bar, search)</div>
+    <div class="label l-dead-bottom">⛔ BOTTOM DEAD ZONE: 350px (captions, buttons, audio)</div>
+    <div class="label l-top">↓ Our top padding: 150px</div>
+    <div class="label l-bottom">↑ Our bottom padding: 400px</div>
+    <div class="label l-right">← Right: 150px (buttons: 120px)</div>
+    <div class="label l-safe">🟦 Blue dashed = our content area (850 x 1370px)</div>
+  </div>
+</body>
+</html>

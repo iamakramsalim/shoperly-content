@@ -1,7 +1,12 @@
 node_modules/
 output/
 *.b64
-slide-*.png
-post-*.png
-ig-profile*.png
 _tmp_*
+# Root-level loose files
+/slide-*.png
+/post-*.png
+/ig-profile*.png
+/bg-photo.png
+/post-v*.html
+/post-01-*.html
+/debug-safezone.html

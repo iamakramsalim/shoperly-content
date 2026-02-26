@@ -10,6 +10,7 @@ const THEMES = {
     BODY_COLOR: "rgba(255,255,255,0.7)",
     NUM_COLOR: "rgba(255,255,255,0.25)",
     LOGO_FILL: "white",
+    LOGO_CIRCLE_FILL: "#FFDD04",
     WORDMARK_FILL: "white",
     SWIPE_BG: "rgba(255,255,255,0.1)",
     SWIPE_COLOR: "rgba(255,255,255,0.6)",
@@ -31,10 +32,11 @@ const THEMES = {
   yellow: {
     BG_COLOR: "#FFDD04",
     TEXT_COLOR: "#1a1a1a",
-    SUBTITLE_COLOR: "rgba(0,0,0,0.5)",
-    BODY_COLOR: "rgba(0,0,0,0.55)",
+    SUBTITLE_COLOR: "rgba(0,0,0,0.75)",
+    BODY_COLOR: "rgba(0,0,0,0.75)",
     NUM_COLOR: "rgba(0,0,0,0.18)",
     LOGO_FILL: "#1a1a1a",
+    LOGO_CIRCLE_FILL: "white",
     WORDMARK_FILL: "#1a1a1a",
     SWIPE_BG: "rgba(0,0,0,0.08)",
     SWIPE_COLOR: "rgba(0,0,0,0.5)",
@@ -116,6 +118,7 @@ async function generateCarousel(carouselData, outputDir) {
       });
     } else if (slide.type === "cta") {
       html = fillTemplate(path.join(templatesDir, "cta.html"), {
+        ...theme,
         SLIDE_NUM: slideNum,
         HEADLINE: slide.headline,
         SUBTITLE: slide.subtitle || "",
@@ -141,5 +144,5 @@ async function generateCarousel(carouselData, outputDir) {
 const dataPath = process.argv[2];
 if (!dataPath) { console.error("Usage: node generate.js <carousel.json> [output_dir]"); process.exit(1); }
 const data = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
-const outDir = process.argv[3] || path.join(__dirname, "output", data.id || "carousel");
+const outDir = path.resolve(process.argv[3] || path.join(__dirname, "output", data.id || "carousel"));
 generateCarousel(data, outDir);

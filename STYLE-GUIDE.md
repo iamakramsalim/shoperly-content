@@ -153,10 +153,73 @@ The Shoperly logo is an SVG from the codebase (`components/assets/logo.tsx` + `l
 #emprendedoresparaguayos #tiendaonline #ecommerce #shoperly #ventasonline #paraguay #emprendimiento
 ```
 
-### Hashtags (core set)
-`#emprendedoresparaguayos #tiendaonline #ecommerce #shoperly #ventasonline #emprendedorespy #negocioonline #paraguay #emprendimiento`
+### Hashtags
+**TikTok limit: 5 hashtags max.** Pick the 5 most relevant from the pool below per post.
 
-Add 2-3 topic-specific ones per post.
+Core pool: `#emprendedoresparaguayos` `#tiendaonline` `#ecommerce` `#shoperly` `#ventasonline` `#emprendedorespy` `#negocioonline` `#paraguay` `#emprendimiento`
+
+Rotate and mix in 1-2 topic-specific ones. Always include `#shoperly`.
+
+## Style 2: Warm Illustration + Marker Text
+
+Inspired by viral TikTok carousel creators (500K+ views). Personal, organic feel vs. Style 1's branded/corporate look.
+
+### When to use
+- Relatable, call-out style content ("Seguís vendiendo por DM?")
+- Pain-point lists, "señales de que...", story-driven carousels
+- When we want to feel like a person talking, not a brand advertising
+
+### Background
+- **One AI-generated warm illustration per carousel** (not per slide)
+- Style: cozy anime/lo-fi aesthetic, warm golden light, desk scenes, packaging, phones
+- Prompt keywords: "warm cozy illustration, golden sunset light, soft pastel, aesthetic lo-fi, digital painting, no text no words no letters"
+- Model: `gpt-image-1`, size `1024x1536`, quality `high`
+- Apply dark overlay `rgba(0,0,0,80)` for text contrast
+- Same background used across all slides, text changes per slide
+
+### Typography
+- **Title font:** Permanent Marker (Google Fonts) — marker/handwritten feel
+  - Hook text: 100px, outlined (5px black outline)
+  - Slide titles: 80px
+- **Subtitle/body font:** Caveat (Google Fonts) — casual handwriting
+  - Size: 50-54px, outlined (3px)
+- **Color palette:**
+  - Primary text: white `(255, 255, 255)`
+  - Accent/highlight: yellow `(255, 220, 60)` — used on key words, numbers, call-outs
+  - Subtitle: warm white `(255, 240, 210)`
+- **Text outline:** black `(0, 0, 0, 230)`, 5px thickness (3px for subtitles). NO drop shadow, use full outline for readability on any background.
+
+### Hook slide formula
+- **Lead with the call-out** (the thing that makes people feel seen)
+- Call-out in big Permanent Marker, centered
+- Key phrase in yellow (e.g. "por DM?")
+- Listicle promise as subtitle in Caveat below
+- Paraguay flag emoji (composited as PNG, 75x75px) next to punch line
+- Max ~8 words in the main call-out
+
+### Content slides
+- Same background, dark overlay
+- Slide number or signal word in yellow Permanent Marker
+- Pain point/tip in white Permanent Marker
+- Supporting text in Caveat
+- Vary text position slightly per slide (not always centered) for organic feel
+
+### CTA slide
+- Same background, slightly stronger overlay `rgba(0,0,0,100)`
+- "shoperly.app" in yellow Permanent Marker
+- Subtitle in Caveat
+- No pill button (doesn't fit the organic style)
+
+### Technical notes
+- Fonts stored in: `shoperly-tiktok-carousel2/pm.ttf` (Permanent Marker), `shoperly-tiktok-carousel2/caveat.ttf` (Caveat)
+- Flag emoji PNG: `shoperly-tiktok-carousel2/flag_py.png` (160x160, Apple style)
+- Pillow can't render emojis natively. Composite PNG images instead.
+- Python/Pillow workflow (not Playwright/HTML like Style 1)
+- Canvas: 1024x1536 (scales from gpt-image-1 output). Safe zones same ratios as Style 1.
+
+### Caption style (same as Style 1)
+- Casual Spanish with voseo
+- 5 hashtags max on TikTok, always include #shoperly
 
 ## File Structure
 

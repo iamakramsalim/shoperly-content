@@ -221,6 +221,54 @@ Inspired by viral TikTok carousel creators (500K+ views). Personal, organic feel
 - Casual Spanish with voseo
 - 5 hashtags max on TikTok, always include #shoperly
 
+## Style 3: White Minimal + Marker Text
+
+Clean, text-only slides. Zero design, zero AI images. Fast to produce, easy to iterate.
+
+### When to use
+- Value-first content (tips, tutorials, how-tos)
+- Positive/aspirational hooks
+- High-volume posting (3x/week)
+
+### Background
+- Pure white `#ffffff`
+- No images, no overlays, no gradients
+
+### Typography
+- **Font:** Permanent Marker (Google Fonts) for everything
+- **Hierarchy:**
+  - Hook headline: 88-92px
+  - Slide number: 160px (yellow)
+  - Slide title: 72px (dark)
+  - Body text: 62px (#555555)
+  - Subtitle/CTA text: 44-48px (#999999)
+  - shoperly.app watermark: 28-30px (#dddddd)
+- **All text centered**, one idea per slide
+- No underlines, no boxes, no decorations
+
+### Color palette
+- Text: `#1a1a1a` (dark)
+- Numbers/accents: `#FFDD04` (Shoperly yellow)
+- Body text: `#555555`
+- Subtitle: `#999999`
+- Watermark: `#dddddd`
+- CTA "shoperly.app": `#FFDD04` yellow
+
+### Slide structure (5-6 slides)
+1. **Hook:** Flag icon centered above, big call-out text, subtitle teasing value
+2-5. **Content:** Big yellow number + title + 2-3 body lines. One point per slide.
+6. **CTA:** Soft transition ("Ya tenés X. Ahora...") + shoperly.app in yellow
+
+### Icons
+- Paraguay flag (composited PNG, 55x55) centered above hook text
+- No other icons or images
+
+### Production
+- Python/Pillow script
+- Canvas: 1080x1920 (native TikTok)
+- Fonts: `shoperly-tiktok-carousel2/pm.ttf` (Permanent Marker)
+- Cost: $0 per carousel
+
 ## File Structure
 
 ```
